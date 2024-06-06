@@ -1,16 +1,16 @@
 let exo4: number [] = [1, 2, 3, 4, 5];
 let valeurRechercher: number = 4;
-let trouvée: boolean = false;
+let trouver: boolean = false;
 exo4[1] = 10;
 for (let i = 0; i < exo4.length; i++) {
     if (exo4[i] === valeurRechercher) {
         console.log(`La valeur ${valeurRechercher} a été trouvée à la position ${i}.`);
-        trouvée = true;
+        trouver = true;
         break;
     }
 }
 
-if (!trouvée) {
+if (!trouver) {
     console.log(`La valeur ${valeurRechercher} n'a pas été trouvée dans le tableau.`);
 }
 exo4.push(6);
